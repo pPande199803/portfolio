@@ -1,3 +1,4 @@
+
 /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
@@ -187,10 +188,12 @@ section .title::after{
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
+    margin-top: 6px;
 }
 .home .home-content .text-3{
     font-size: 40px;
     margin: 5px 0;
+    margin-top: 8px;
 }
 .home .home-content .text-3 span{
     color: crimson;
@@ -224,7 +227,7 @@ section .title::after{
     height: 400px;
     width: 400px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 500px;
 }
 .about .about-content .right{
     width: 55%;
@@ -303,6 +306,42 @@ section .title::after{
     font-size: 25px;
     font-weight: 500;
     margin: 90px 0 7px 0;
+}
+.services .text{
+    
+    font-size: 20px;
+    margin-top: 2px;
+    text-align: center; 
+}
+.services .cgp{
+
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center; 
+}
+.services .yop{
+
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center; 
+}
+.services .box:hover{
+    background-color: crimson;
+    transform: scale(1.05);
+}
+.services .box{
+    height: 350px;
+    transition: all 0.3s ease;
+}
+.services i{
+    margin-top: 20px;
+}
+.services .card{
+    background: #222;
+}
+.services .cert{
+    font-size: 39px;
+    font-weight: 500;
 }
 
 /* skills section styling */
@@ -431,6 +470,11 @@ section .title::after{
 .teams .carousel .card:hover img{
     border-color: #fff;
 }
+
+.teams a{
+    color:rgb(0, 21, 92) ;
+    text-decoration: underline;
+}
 .owl-dots{
     text-align: center;
     margin-top: 20px;
@@ -443,6 +487,7 @@ section .title::after{
     border-radius: 50%;
     border: 2px solid crimson!important;
     transition: all 0.3s ease;
+    
 }
 .owl-dot.active{
     width: 35px;
@@ -465,6 +510,7 @@ section .title::after{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
+    text-align: center;
 }
 .contact .contact-content .left p{
     text-align: justify;
@@ -498,6 +544,7 @@ section .title::after{
     height: 45px;
     width: 100%;
     margin-bottom: 15px;
+    text-align: center;
 }
 .contact .right form .textarea{
     height: 80px;
@@ -563,6 +610,7 @@ footer span a{
 footer span a:hover{
     text-decoration: underline;
 }
+
 
 
 /* responsive media query start */
@@ -641,6 +689,22 @@ footer span a:hover{
         width: 100%;
         margin-bottom: 35px;
     }
+    .services .text{
+        font-size: 10px;
+    }
+    .services .cgp{
+    
+        font-size: 18px;
+        margin-top: 10px;
+        text-align: center; 
+    }
+    .services .yop{
+    
+        font-size: 18px;
+        margin-top: 10px;
+        text-align: center; 
+    }
+    
 }
 
 @media (max-width: 690px) {
@@ -659,14 +723,29 @@ footer span a:hover{
     .services .serv-content .card{
         width: 100%;
     }
+    .services .text{
+        font-size: 18px;
+    }
+    .services .cgp{
+    
+        font-size: 16px;
+        
+     
+    }
+    .services .yop{
+    
+        font-size: 16px;
+        /* margin-top: 10px;
+        text-align: center;  */
+    }
 }
 
 @media (max-width: 500px) {
     .home .home-content .text-2{
-        font-size: 50px;
+        font-size: 39px;
     }
     .home .home-content .text-3{
-        font-size: 27px;
+        font-size: 24px;
     }
     .about .about-content .right .text,
     .skills .skills-content .left .text{
@@ -690,4 +769,74 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+    .services .text{
+        font-size: 16px;
+    }
+    .services .cgp{
+        font-size: 16px; 
+     
+    }
+    .services .yop{
+        font-size: 16px;
+    }
+    .services .cert{
+        font-size: 20px;
+    }
+    .sub-title{
+        font-size: 14px;
+    }
+    section .title::after{
+        font-size: 17px;
+    }
+    .fa.fa-envelope {
+        font-size: 17px;
+    }
+    .fab.fa-linkedin {
+        font-size: 17px;
+        margin-left: 10px;
+    }
+    .fab.fa-whatsapp {
+        font-size: 17px;
+        margin-left: 10px;
+    
+    }
+    .contact .right form .name{
+        font-size: 17px;
+    }
+    
+}
+
+.owl-carousel.owl-drag .owl-item {
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+}
+/* .owl-carousel.owl-drag .owl-item :hover {
+    color: crimson;
+} */
+
+ .fa.fa-envelope {
+    color:crimson;
+    font-size: 30px;
+    cursor: pointer;
+}
+.fab.fa-linkedin {
+    color:crimson;
+    font-size: 30px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.fab.fa-whatsapp {
+    color:crimson;
+    font-size: 30px;
+    margin-left: 15px;
+    cursor: pointer;
+
+}
+.column .right{
+    margin-top: 30px;
 }
